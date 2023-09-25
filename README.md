@@ -28,9 +28,7 @@ Suivez les étapes ci-dessous pour déployer WordPress avec Kubernetes :
 5. Créez un service pour WordPress :
    - Utilisez le fichier yml fourni (`service-nodeport-wordpress.yml`) pour créer un service NodePort pour exposer le frontend de WordPress en exécutant la commande suivante : `kubectl apply -f service-nodeport-wordpress.yml`
 
-6.
-
-7. Accédez à WordPress :
+6. Accédez à WordPress :
    - Utilisez la commande `hostname -I` pour obtenir l'adresse IP de votre cluster.
    - Ouvrez un navigateur web et accédez à l'adresse IP du cluster avec le NodePort spécifié pour le service WordPress dans le fichier `service-nodeport-wordpress.yml`.
     <br>
